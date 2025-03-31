@@ -41,11 +41,11 @@ This seems to have been introduced with Yarn 4.3.0 with https://github.com/yarnp
 ➤ YN0000: · Yarn 4.2.2
 ➤ YN0000: ┌ Resolution step
 ➤ YN0000: └ Completed
-➤ YN0000: ┌ Post-resolution validation
-➤ YN0002: │ repro-yarn-optional-peers-required@workspace:. doesn't provide react (p18cd3), requested by @material-ui/core.
-➤ YN0002: │ repro-yarn-optional-peers-required@workspace:. doesn't provide react-dom (p2cc76), requested by @material-ui/core.
-➤ YN0086: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0000: ┌ Fetch step
 ➤ YN0000: └ Completed
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed
+➤ YN0000: · Done in 0s 56ms
 ```
 
 #### Output on Yarn `4.3.0` ❌
@@ -55,9 +55,12 @@ This seems to have been introduced with Yarn 4.3.0 with https://github.com/yarnp
 ➤ YN0000: ┌ Resolution step
 ➤ YN0000: └ Completed
 ➤ YN0000: ┌ Post-resolution validation
-➤ YN0002: │ repro-yarn-optional-peers-required@workspace:. doesn't provide @types/react (p7178c), requested by @material-ui/core.
-➤ YN0002: │ repro-yarn-optional-peers-required@workspace:. doesn't provide react (pa20c8), requested by @material-ui/core.
-➤ YN0002: │ repro-yarn-optional-peers-required@workspace:. doesn't provide react-dom (pe9d33), requested by @material-ui/core.
+➤ YN0002: │ repro-yarn-optional-peers-required@workspace:. doesn't provide @types/react (p7178c), requested by @material-ui/core and other dependencies.
 ➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
 ➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed
+➤ YN0000: · Done with warnings in 0s 57ms
 ```
