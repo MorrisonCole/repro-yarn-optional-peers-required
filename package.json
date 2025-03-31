@@ -1,0 +1,8 @@
+{
+  "name": "repro-yarn-optional-peers-required",
+  "version": "1.0.0",
+  "dependencies": {
+    "@material-ui/core": "4.12.4"
+  },
+  "packageManager": "yarn@4.8.1"
+}
